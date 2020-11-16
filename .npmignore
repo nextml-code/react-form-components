@@ -1,0 +1,6 @@
+tests
+src
+.github
+.prettierrc
+rollup.config.js
+.eslintrc.json
