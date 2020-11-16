@@ -9,6 +9,7 @@ import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 const Wrapper = styled.div`
   border: 1px solid var(--aiwizo-application-primary-border-grey);
   border-radius: var(--aiwizo-application-border-radius-primary);
+  background-color: #ffffff;
 `;
 
 const Icon = styled(FontAwesomeIcon)`
@@ -52,6 +53,7 @@ const NoOptionWrapper = styled.div`
 const Input = styled.input`
   border: none;
   width: 100%;
+  background-color: transparent;
   font-size: var(--aiwizo-application-font-size-regular);
   padding: var(--aiwizo-application-spacing-small);
   font-family: var(--aiwizo-application-default-font);
