@@ -24,7 +24,7 @@ Primary.args = {
     { name: "baz3" },
   ],
   renderAs: (props, index) => props.name,
-  callback: (option) => {
+  onSelect: (option) => {
     console.log(option);
   },
 };

@@ -13,7 +13,7 @@ npm install @aiwizo/react-form-components
 
 ### Select
 ```JavaScript
-import { Select } from '@codewell/react-form-components';
+import { Select } from '@aiwizo/react-form-components';
 
 <Select 
   // All selectable options as
@@ -30,13 +30,15 @@ import { Select } from '@codewell/react-form-components';
     { name: "baz3" },
   ]}
 
-  // The key on each object that should
-  // be displayed in the options list
-  display="name"
+  // Function that returns what should
+  // be rendered in the option component
+  renderAs={(props, index) => {
+    return props.name;
+  }}
 
-  // Callback triggered when an option 
+  // callback triggered when an option 
   // is selected
-  callback={(option) => {
+  onSelect={(option) => {
     console.log(option);
   }}
 />
