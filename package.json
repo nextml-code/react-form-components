@@ -13,15 +13,35 @@
     "start": "npm run storybook",
     "format": "prettier \"**/*.{js,jsx}\" --write"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
+  },
+  "dependencies": {
+    "@codewell/apply": "^0.1.1",
+    "@codewell/component-map": "^0.2.0",
+    "@codewell/defer": "0.0.3",
+    "@codewell/render-gate": "0.0.2",
+    "@codewell/super-search": "^1.0.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.12",
+    "styled-components": "^5.2.1"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@babel/plugin-transform-runtime": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
     "@babel/preset-react": "^7.12.5",
     "@babel/runtime": "^7.12.5",
-    "@fortawesome/fontawesome-svg-core": "^1.2.32",
-    "@fortawesome/free-solid-svg-icons": "^5.15.1",
-    "@fortawesome/react-fontawesome": "^0.1.12",
     "@rollup/plugin-babel": "^5.2.1",
     "@rollup/plugin-commonjs": "^16.0.0",
     "@rollup/plugin-node-resolve": "^10.0.0",
@@ -40,21 +60,5 @@
     "react-is": "^17.0.1",
     "rollup": "^2.33.2",
     "rollup-plugin-peer-deps-external": "^2.2.4"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,css,md}": "prettier --write"
-  },
-  "dependencies": {
-    "@codewell/apply": "^0.1.1",
-    "@codewell/component-map": "^0.2.0",
-    "@codewell/defer": "0.0.3",
-    "@codewell/render-gate": "0.0.2",
-    "@codewell/super-search": "^1.0.0",
-    "styled-components": "^5.2.1"
   }
 }
