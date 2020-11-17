@@ -4,7 +4,7 @@ import Options from "./Options";
 import Wrapper from "./Wrapper";
 import Input from "./Input";
 
-const Select = ({ options, renderAs, callback }) => {
+const Select = ({ options, renderAs, onSelect }) => {
   const [filter, setFilter] = useState("");
   const [expanded, setExpanded] = useState(false);
 
@@ -16,7 +16,7 @@ const Select = ({ options, renderAs, callback }) => {
           options={options}
           filter={filter}
           renderAs={renderAs}
-          callback={callback}
+          onSelect={onSelect}
           setExpanded={setExpanded}
           setFilter={setFilter}
         />

@@ -21,10 +21,10 @@ const NoOptionWrapper = styled.div`
 const filterOptions = (options, filter) =>
   options.filter((option) => superSearch(filter, option).numberOfMatches > 0);
 
-const select = (setExpanded, setFilter, callback, renderAs) => (option) => {
+const select = (setExpanded, setFilter, onSelect, renderAs) => (option) => {
   setExpanded(false);
   setFilter(renderAs(option));
-  callback(option);
+  onSelect(option);
 };
 
 const Options = ({
@@ -33,7 +33,7 @@ const Options = ({
   renderAs,
   setExpanded,
   setFilter,
-  callback,
+  onSelect,
 }) => {
   const filteredOptions = filterOptions(options, filter);
 
@@ -44,7 +44,7 @@ const Options = ({
         component={Option}
         passProperties={{
           renderAs,
-          onClick: select(setExpanded, setFilter, callback, renderAs),
+          onClick: select(setExpanded, setFilter, onSelect, renderAs),
         }}
         keyFunction={(_, index) => index}
       />
