@@ -23,7 +23,7 @@ Primary.args = {
     { name: "bar3" },
     { name: "baz3" },
   ],
-  display: "name",
+  renderAs: (props, index) => props.name,
   callback: (option) => {
     console.log(option);
   },

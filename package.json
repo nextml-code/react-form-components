@@ -54,6 +54,7 @@
     "@codewell/component-map": "^0.2.0",
     "@codewell/defer": "0.0.3",
     "@codewell/render-gate": "0.0.2",
+    "@codewell/super-search": "^1.0.0",
     "styled-components": "^5.2.1"
   }
 }
