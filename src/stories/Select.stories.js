@@ -10,16 +10,17 @@ export default {
 const Template = (args) => <Select {...args} />;
 
 export const Primary = Template.bind({});
+export const Secondary = Template.bind({});
 
 const options = [
   { name: "foo" },
   { name: "bar" },
   { name: "baz" },
-  { name: "foo2" },
+  { name: "FOO2" },
   { name: "bar2" },
   { name: "baz2" },
   { name: "foo3" },
-  { name: "bar3" },
+  { name: "bAr3" },
   { name: "baz3" },
 ];
 
@@ -30,4 +31,12 @@ Primary.args = {
     console.log(option);
   },
   defaultValue: options[0].name,
+};
+
+Secondary.args = {
+  options,
+  renderAs: (props, index) => props.name,
+  onSelect: (option) => {
+    console.log(option);
+  },
 };
