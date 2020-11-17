@@ -4,7 +4,7 @@ import Options from "./Options";
 import Wrapper from "./Wrapper";
 import Input from "./Input";
 
-const Select = ({ options, renderAs, onSelect, defaultValue }) => {
+const Select = ({ options, renderAs, onSelect, defaultValue = "" }) => {
   const [filter, setFilter] = useState(defaultValue);
   const [expanded, setExpanded] = useState(false);
 
