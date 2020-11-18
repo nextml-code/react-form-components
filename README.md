@@ -41,6 +41,10 @@ import { Select } from '@aiwizo/react-form-components';
   onSelect={(option) => {
     console.log(option);
   }}
+
+  // Set index of default value in the 
+  // list of objects (defaults to 0)
+  defaultIndex={2}
 />
 ```
 

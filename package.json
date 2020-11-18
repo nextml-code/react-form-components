@@ -17,7 +17,7 @@
     "storybook": "start-storybook -p 6006 --no-dll",
     "build-storybook": "build-storybook --no-dll",
     "start": "npm run storybook",
-    "format": "prettier \"**/*.{js,jsx}\" --write"
+    "format": "prettier \"**/*.{js,jsx,md,css}\" --write"
   },
   "husky": {
     "hooks": {
