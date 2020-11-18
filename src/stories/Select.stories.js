@@ -30,7 +30,7 @@ Primary.args = {
   onSelect: (option) => {
     console.log(option);
   },
-  defaultValue: options[0].name,
+  defaultIndex: 1,
 };
 
 Secondary.args = {
