@@ -43,7 +43,7 @@ import { Select } from '@aiwizo/react-form-components';
   }}
 
   // Set index of default value in the 
-  // list of objects (defaults to 0)
+  // list of options (defaults to 0)
   defaultIndex={2}
 />
 ```
