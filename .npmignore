@@ -4,3 +4,4 @@ src
 .prettierrc
 rollup.config.js
 .eslintrc.json
+.storybook
