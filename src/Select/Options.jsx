@@ -33,7 +33,6 @@ const EmptyOption = styled.div`
 `;
 
 const Options = ({ dispatch, options, renderAs, onSelect }) => {
-  console.log(options);
   return (
     <OptionsWrapper>
       <EmptyOption onClick={defer(dispatch, { type: "RESET_FILTER" })}>

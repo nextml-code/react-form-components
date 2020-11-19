@@ -4,7 +4,6 @@ import Options from "./Options";
 import Wrapper from "./Wrapper";
 import Input from "./Input";
 import superSearch from "@codewell/super-search";
-import isDefined from "@codewell/is-defined";
 
 const initialState = {
   filter: "",

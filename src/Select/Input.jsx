@@ -35,7 +35,7 @@ const RenderedOption = styled.div`
   flex: 1;
 `;
 
-const updateFilter = (state, dispatch) => ({ target: { value } }) => {
+const updateFilter = (dispatch) => ({ target: { value } }) => {
   dispatch({ type: "SET_FILTER", payload: value });
 };
 
@@ -51,7 +51,7 @@ const Input = ({ state, dispatch, renderedOption }) => (
 
     <RenderGate condition={state.showFilterInput}>
       <StyledInput
-        onChange={updateFilter(state, dispatch)}
+        onChange={updateFilter(dispatch)}
         value={state.filter}
         placeholder="Select an option..."
       />
