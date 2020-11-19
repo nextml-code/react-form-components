@@ -26,7 +26,10 @@ const options = [
 
 Primary.args = {
   options,
-  renderAs: (props, index) => props.name,
+  renderAs: (props, index) => {
+    console.log(index);
+    return props.name;
+  },
   onSelect: (option) => {
     console.log(option);
   },
@@ -35,7 +38,10 @@ Primary.args = {
 
 Secondary.args = {
   options,
-  renderAs: (props, index) => props.name,
+  renderAs: (props, index) => {
+    console.log(index);
+    return props.name;
+  },
   onSelect: (option) => {
     console.log(option);
   },

@@ -15,9 +15,9 @@ const OptionWrapper = styled.div`
   }
 `;
 
-const Option = (props, index) => (
+const Option = (props) => (
   <OptionWrapper onClick={defer(props.onClick, props)}>
-    {props.renderAs(props, index)}
+    {props.renderAs(props)}
   </OptionWrapper>
 );
 

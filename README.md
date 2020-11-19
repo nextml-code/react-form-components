@@ -10,12 +10,12 @@ npm install @aiwizo/react-form-components
 
 ## Basic Usage
 
-
 ### Select
+
 ```JavaScript
 import { Select } from '@aiwizo/react-form-components';
 
-<Select 
+<Select
   // All selectable options as
   // an array of objects
   options={[
@@ -36,15 +36,14 @@ import { Select } from '@aiwizo/react-form-components';
     return props.name;
   }}
 
-  // callback triggered when an option 
+  // callback triggered when an option
   // is selected
   onSelect={(option) => {
     console.log(option);
   }}
 
-  // Set index of default value in the 
+  // Set index of default value in the
   // list of options (defaults to 0)
   defaultIndex={2}
 />
 ```
-
