@@ -25,7 +25,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,css,md}": "prettier --write"
+    "*.{js,jsx,css,md}": "prettier --write"
   },
   "dependencies": {
     "@codewell/apply": "^0.1.1",
@@ -33,15 +33,15 @@
     "@codewell/defer": "0.0.3",
     "@codewell/is-defined": "^2.0.0",
     "@codewell/render-gate": "0.0.2",
-    "@codewell/super-search": "^1.0.0",
+    "@codewell/super-search": "^1.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.12",
     "styled-components": "^5.2.1"
-  },
-  "peerDependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
@@ -66,6 +66,10 @@
     "react-dom": "^17.0.1",
     "react-is": "^17.0.1",
     "rollup": "^2.33.2",
-    "rollup-plugin-peer-deps-external": "^2.2.4"
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.12",
+    "styled-components": "^5.2.1"
   }
 }
