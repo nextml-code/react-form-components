@@ -43,7 +43,10 @@ const Checkbox = ({ onChange, value, label }) => {
         {checked ? (
           <FontAwesomeIcon
             icon={faCheck}
-            style={{ color: "var(--aiwizo-application-green)", fontSize: "12px" }}
+            style={{
+              color: "var(--aiwizo-application-green)",
+              fontSize: "12px",
+            }}
           />
         ) : null}
       </StyledCheckbox>
