@@ -61,7 +61,7 @@ import { Checkbox } from '@aiwizo/react-form-components';
 <Checkbox
   // Callback function triggered whenever the
   // checkbox is clicked
-  onChange={({checked, value}) => {}}
+  onChange={({checked, value}) => { /* Do something */ }}
 
   // Value that is passed to the onChange
   // callback
