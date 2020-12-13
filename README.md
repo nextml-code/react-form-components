@@ -21,13 +21,6 @@ import { Select } from '@aiwizo/react-form-components';
   options={[
     { name: "foo" },
     { name: "bar" },
-    { name: "baz" },
-    { name: "foo2" },
-    { name: "bar2" },
-    { name: "baz2" },
-    { name: "foo3" },
-    { name: "bar3" },
-    { name: "baz3" },
   ]}
 
   // Function that returns what should
@@ -38,12 +31,44 @@ import { Select } from '@aiwizo/react-form-components';
 
   // callback triggered when an option
   // is selected
-  onSelect={(option) => {
-    console.log(option);
-  }}
+  onSelect={(option) => { /* Do something */ }}
 
   // Set index of default value in the
   // list of options (defaults to 0)
   defaultIndex={2}
+/>
+```
+
+```JavaScript
+import { Button } from '@aiwizo/react-form-components';
+
+<Button
+  // Sets the background color
+  // for default button style
+  // Available options: red, blue, green
+  color="green"
+
+  // Optional parameter that sets
+  // the button to "secondary" type
+  // If not set, it uses default settings.
+  type="secondary"
+/>
+```
+
+```JavaScript
+import { Checkbox } from '@aiwizo/react-form-components';
+
+<Checkbox
+  // Callback function triggered whenever the
+  // checkbox is clicked
+  onChange={({checked, value}) => {}}
+
+  // Value that is passed to the onChange
+  // callback
+  value="some value"
+
+  // Optional label displayed to the
+  // right of the checkbox
+  label="Lorem Ipsum"
 />
 ```
