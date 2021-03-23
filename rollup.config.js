@@ -3,6 +3,7 @@ import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import replace from "@rollup/plugin-replace";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
+import postcss from "rollup-plugin-postcss";
 
 const NODE_ENV = process.env.NODE_ENV || "development";
 const outputFile = NODE_ENV === "production" ? "./lib/prod.js" : "./lib/dev.js";
@@ -31,6 +32,9 @@ export default {
     peerDepsExternal(),
     replace({
       "process.env.NODE_ENV": JSON.stringify(NODE_ENV),
+    }),
+    postcss({
+      plugins: [],
     }),
     babel({
       exclude: "node_modules/**",
