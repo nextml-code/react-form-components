@@ -1,6 +1,8 @@
 import React from "react";
 import { Select } from "..";
 
+import "@aiwizo/application-styles";
+
 export default {
   title: "Select",
   component: Select,

@@ -10,9 +10,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "test": "jest",
-    "build": "npm run build:dev && npm run build:prod",
-    "build:prod": "NODE_ENV=production rollup --config",
-    "build:dev": "NODE_ENV=development rollup --config",
+    "build": "rollup --config",
     "build:local": "npm run build && npm pack",
     "storybook": "start-storybook -p 6006 --no-dll",
     "build-storybook": "build-storybook --no-dll",
@@ -28,7 +26,6 @@
     "*.{js,jsx,css,md}": "prettier --write"
   },
   "dependencies": {
-    "@aiwizo/application-styles": "^0.0.3",
     "@codewell/apply": "^0.1.1",
     "@codewell/component-map": "^0.3.0",
     "@codewell/defer": "0.0.3",
@@ -38,6 +35,7 @@
     "@codewell/target-value": "^0.1.1"
   },
   "peerDependencies": {
+    "@aiwizo/application-styles": "^0.0.4",
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.12",
@@ -46,6 +44,7 @@
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
+    "@aiwizo/application-styles": "^0.0.4",
     "@babel/core": "^7.12.3",
     "@babel/plugin-transform-runtime": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
@@ -57,11 +56,10 @@
     "@rollup/plugin-babel": "^5.2.1",
     "@rollup/plugin-commonjs": "^16.0.0",
     "@rollup/plugin-node-resolve": "^10.0.0",
-    "@rollup/plugin-replace": "^2.3.4",
-    "@storybook/addon-actions": "^6.1.21",
-    "@storybook/addon-essentials": "^6.1.21",
-    "@storybook/addon-links": "^6.1.21",
-    "@storybook/react": "^6.1.21",
+    "@storybook/addon-actions": "^6.2.9",
+    "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-links": "^6.2.9",
+    "@storybook/react": "^6.2.9",
     "babel-loader": "^8.2.1",
     "husky": "^4.3.0",
     "jest": "^26.6.3",
