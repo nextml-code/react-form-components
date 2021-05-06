@@ -1,19 +1,15 @@
 import babel from "@rollup/plugin-babel";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
-import replace from "@rollup/plugin-replace";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import postcss from "rollup-plugin-postcss";
-
-const NODE_ENV = process.env.NODE_ENV || "development";
-const outputFile = NODE_ENV === "production" ? "./lib/prod.js" : "./lib/dev.js";
 
 const extensions = [".js", ".jsx"];
 
 export default {
   input: "./src/index.js",
   output: {
-    file: outputFile,
+    file: "./lib/index.js",
     format: "cjs",
     globals: {
       react: "React",
@@ -27,12 +23,10 @@ export default {
     /@babel\/runtime/,
     "styled-components",
     /@fortawesome\//,
+    "@aiwizo/application-styles",
   ],
   plugins: [
     peerDepsExternal(),
-    replace({
-      "process.env.NODE_ENV": JSON.stringify(NODE_ENV),
-    }),
     postcss({
       plugins: [],
     }),
