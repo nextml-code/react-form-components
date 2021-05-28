@@ -72,3 +72,25 @@ import { Checkbox } from '@aiwizo/react-form-components';
   label="Lorem Ipsum"
 />
 ```
+
+```JavaScript
+import { Input } from '@aiwizo/react-form-components';
+
+<Input
+  // Icon that appears to the left
+  // for indicating input type/purpose
+  icon={ /* Font awesome icon */ }
+
+  // Optional label displayed on 
+  // top of the right of the input
+  label="Lorem Ipsum"
+
+  // ...regular input fields
+/>
+```
+
+```JavaScript
+import { Label } from '@aiwizo/react-form-components';
+
+<Label>Lorem ipsum</Label>
+```
