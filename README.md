@@ -81,7 +81,7 @@ import { Input } from '@aiwizo/react-form-components';
   // for indicating input type/purpose
   icon={ /* Font awesome icon */ }
 
-  // Optional label displayed on 
+  // Optional label displayed on
   // top of the right of the input
   label="Lorem Ipsum"
 
