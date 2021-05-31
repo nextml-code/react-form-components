@@ -27,7 +27,7 @@ const StyledLabel = styled.span`
 `;
 
 const handleEvent = (onChange, setChecked, value, checked) => () => {
-  onChange({ value, checked });
+  onChange({ value, checked: !checked });
   setChecked(!checked);
 };
 
